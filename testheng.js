@@ -113,7 +113,7 @@ function clearField() {
 ////////////////get value from localStorage like object/////////////
 function getEmployeeList() {
   // employees = []; //?
-  employees = JSON.parse(localStorage.getItem("employees"));
+  employees = JSON.parse(localStorage.getItem("employees")) || [];
   let tableContent = ""; //?
   tbody.innerHTML = tableContent; //we want to table is empty for get value new from localStorage .
   listEmployee();
